@@ -1,0 +1,127 @@
+
+:root{
+  --color-highlight: 96, 96, 96;
+  --color-primary: #0f2b4f;
+  --color-secondary: #e1c07f;
+  --color-text-p: #657687;
+  --color-text-heading: #0f2b4f;
+  scroll-behavior: smooth; 
+}
+.body{
+  background-color: rgba(var(--color-highlight), 0.5);
+  color: var(--color-text-p);
+}
+.jumbotron{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/ModeloSplatterBackground.svg");
+    background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-content {
+  box-shadow: 5px 10px 18px #888888;
+  font-size: 1.5rem !important;
+}
+.reveal-scroll {
+  opacity: 0.0;
+
+}
+img {
+  
+  -webkit-filter: drop-shadow(0px 10px 5px #666666);
+  filter: drop-shadow(0px 10px 5px #666666);
+}
+.water-drop-background {
+  position: relative;
+}
+.water-drop-background::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-size: cover;
+  background-image: url("../images/vector-water-drops-15.png");
+  background-position: top center;
+  opacity: .1;
+}
+
+ .heading-2{
+  color: white !important;
+  font-family: 'Luminari', fantasy;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    line-height: 1.3em;
+    letter-spacing: 3px;
+}
+.spacer {
+  width: 100%;
+  height: 100px;
+}
+.spacer-lg {
+  width: 100%;
+  height: 200px;
+}
+.spacer-sm {
+  width: 100%;
+  height: 50px;
+}
+
+
+.main-product-image{
+    position:relative;
+    animation-name: drop-in;
+    animation-duration: 1s;
+    /* transform: rotate(5deg); */
+    height: 55vh;  
+}
+  
+
+
+.punchline i{
+    color: #152c50; font-size:55px; 
+    text-shadow: 0 0 3px #e1c07f, 0 0 5px #ffffff;
+    line-height: 1.3em;
+    letter-spacing: 3px;
+}
+
+.especial-heading{
+  position: relative;
+  width: 1000px;
+  height: 50vh;
+}
+@media screen and (max-width: 1000px) {
+  .especial-heading{
+    display: none;
+  }
+}
+h2 {
+  color: var(--color-text-heading) !important;
+}
+p{
+  color: var(--color-text-p) !important;
+}
+a{
+  display:inline-block;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 500px; /* [1.1] Set it as per your need */
+ 
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
